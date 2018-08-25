@@ -1,0 +1,5 @@
+function get() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Report Configuration");
+  var maxID=sheet.getRange("B19:B19").getCell(1, 1).getValue()
+  sheet.getRange("B20:B20").getCell(1, 1).setValue(maxID)
+}
